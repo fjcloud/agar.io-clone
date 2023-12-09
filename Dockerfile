@@ -2,7 +2,7 @@ FROM node:14-alpine
 
 COPY package.json /opt/app-root/src/
 RUN npm install && npm cache clean --force
-COPY . /usr/src/app
+COPY . /opt/app-root/src/
 
 CMD [ "npm", "start" ]
 
