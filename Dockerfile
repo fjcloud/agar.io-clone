@@ -1,6 +1,6 @@
 FROM node:14-alpine
 
-COPY package.json /usr/src/app/
+COPY package.json /opt/app-root/src/
 RUN npm install && npm cache clean --force
 COPY . /usr/src/app
 
